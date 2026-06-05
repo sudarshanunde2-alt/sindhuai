@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon Code -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>SindhuAI.in - Your Voice Assistant</title>
+<style>
+:root {
+  --bg1: #0f2027; --bg2: #203a43; --bg3: #2c5364;
+  --text: white; --card: rgba(255,255,255,0.1); --accent: #00ff88;
+}
+body.light {
+  --bg1: #e0f7fa; --bg2: #b2ebf2; --bg3: #80deea;
+  --text: #0f2027; --card: rgba(0,0,0,0.05); --accent: #0077b6;
+}
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', sans-serif; transition:0.3s; }
+body { background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3)); color:var(--text); text-align:center; }
+.container { max-width:1000px; margin:30px auto; padding:20px; }
+
+/* Navbar */
+.navbar { position:fixed; top:0; left:0; width:100%; background:rgba(0,0,0,0.3); backdrop-filter:blur(10px); 
+  padding:10px 20px; display:flex; justify-content:space-between; align-items:center; z-index:1000; }
+.flags { font-size:1.5rem; }
+.flags span { cursor:pointer; margin:0 5px; opacity:0.6; }
+.flags span:hover { opacity:1; transform:scale(1.2); }
+.theme-btn { background:var(--card); border:2px solid var(--accent); color:var(--accent); 
+  padding:8px 15px; border-radius:20px; cursor:pointer; font-weight:bold; }
+
+/* Banner */
+.banner { background:var(--accent); color:var(--bg1); padding:12px 20px; position:fixed; top:55px; left:0; 
+  width:100%; z-index:999; display:flex; justify-content:space-between; align-items:center; font-size:0.95rem; }
+.banner a { background:var(--bg1); color:var(--accent); padding:8px 18px; border-radius:20px; 
+  text-decoration:none; font-weight:bold; }
+.spacer { height:110px; }
+
+/* Logo + CEO Photo */
+.logo-img { width:120px; height:120px; margin-bottom:15px; border-radius:20px; object-fit:cover; border:3px solid var(--accent); }
+.ceo-img { width:150px; height:150px; border-radius:50%; border:4px solid var(--accent); object-fit:cover; }
+
+h1 { font-size:3rem; margin-bottom:5px; color:var(--accent); }
+.trust { margin:20px 0; font-size:1.1rem; opacity:0.9; }
+.btn { background:var(--accent); color:var(--bg1); padding:15px 40px; border:none; border-radius:50px; 
+  font-size:1.1rem; font-weight:bold; cursor:pointer; margin-top:20px; }
+.btn:hover { transform:scale(1.05); }
+
+.features { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:15px; margin-top:40px; }
+.card { background:var(--card); padding:20px; border-radius:15px; }
+.card h3 { color:var(--accent); margin-bottom:8px; }
+
+/* Demo Video */
+.demo { margin:60px 0; padding:40px 20px; background:var(--card); border-radius:20px; }
+.demo video { width:100%; max-width:600px; border-radius:15px; border:3px solid var(--accent); margin-top:20px; }
+
+/* Testimonials */
+.testimonials { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-top:60px; }
+.testi { background:var(--card); padding:25px; border-radius:15px; border-left:4px solid var(--accent); }
+.testi p { font-style:italic; margin-bottom:10px; }
+.stars { color:gold; font-size:1.2rem; }
+
+.coming-soon { margin-top:50px; }
+.apps-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:10px; margin-top:20px; }
+.app-card { background:var(--card); padding:15px; border-radius:10px; border:1px dashed var(--accent); opacity:0.6; }
+footer { margin-top:50px; padding-top:20px; border-top:1px solid var(--card); opacity:0.7; }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="flags">
+    <span title="Hindi">🇮🇳</span>
+    <span title="English">🇺🇸</span>
+    <span title="Marathi">🚩</span>
+  </div>
+  <button class="theme-btn">🌙 Dark</button>
+</div>
+
+<!-- Smart Banner -->
+<div class="banner">
+  <span><b>📱 SindhuAI.in App</b> - Best experience app me</span>
+  <a href="sindhuai.apk">DOWNLOAD</a>
+</div>
+<div class="spacer"></div>
+
+<div class="container">
+
+<!-- LOGO.PNG - Bada wala logo upar -->
+<img src="/logo.png" alt="SindhuAI.in Logo" class="logo-img">
+<h1>SindhuAI.in</h1>
+
+<div class="trust">
+  🔥 5000+ Downloads | ⭐ 4.8 Rating | 🔒 No Ads, No Data Theft
+</div>
+
+<!-- CEO.JPG - Teri photo gol wali -->
+<div style="margin:30px 0;">
+  <img src="/ceo.jpg" alt="Sudarshan Unde CEO" class="ceo-img">
+  <p style="margin-top:10px; font-size:1.1rem;">Sudarshan Unde<br>
+  <span style="color:var(--accent);">CEO & Founder - SindhuAI.in</span></p>
+  <p style="margin-top:5px; font-size:0.95rem; background:linear-gradient(90deg, #ff9933, white, #138808); 
+     -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:bold;">
+     🇮🇳 Made in India App 🇮🇳
+  </p>
+</div>
+
+<p>Your Personal Voice Assistant - Speak in 22 Indian Languages, No Popups, Full Privacy!</p>
+
+<button class="btn" onclick="window.location.href='sindhuai.apk'">Download APK</button>
+
+<!-- Demo Video -->
+<div class="demo">
+  <h2 style="color:var(--accent); margin-bottom:15px;">🎬 See SindhuAI.in in Action</h2>
+  <p>No popups. Just speak and get instant answers.</p>
+  <video controls poster="/logo.png">
+    <source src="demo.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
+  <p style="margin-top:10px; font-size:0.9rem; opacity:0.7;">10 sec demo - Real voice command</p>
+</div>
+
+<!-- Features -->
+<div class="features">
+  <div class="card"><h3>🎤 Voice Commands</h3><p>Say "SindhuAI, what's the time" - Instant reply</p></div>
+  <div class="card"><h3>💬 Smart Chat</h3><p>Ask questions, get answers in your language</p></div>
+  <div class="card"><h3>📝 Smart Notes</h3><p>"Take a note: buy milk" - Auto saves</p></div>
+  <div class="card"><h3>🌤️ Live Weather</h3><p>Real-time weather updates</p></div>
+  <div class="card"><h3>🎵 Play Music</h3><p>"Play Arijit Singh" - Phone music control</p></div>
+  <div class="card"><h3>📞 Make Calls</h3><p>"Call Mom" - Handsfree dialing</p></div>
+  <div class="card"><h3>🔍 Web Search</h3><p>"Cricket score" - Live internet data</p></div>
+  <div class="card"><h3>🔒 Privacy First</h3><p>100% data stays on your phone</p></div>
+  <div class="card"><h3>🗣️ 22 Languages</h3><p>Hindi, Marathi, Tamil, Telugu + 18 more</p></div>
+</div>
+
+<!-- Testimonials -->
+<div class="testimonials">
+  <div class="testi">
+    <div class="stars">⭐</div>
+    <p>"Best voice assistant for Hindi. Faster than Google Assistant!"</p>
+    <b>- Rohit Sharma, Delhi</b>
+  </div>
+  <div class="testi">
+    <div class="stars">⭐</div>
+    <p>"Finally an AI with no popups. Love the privacy feature."</p>
+    <b>- Priya Patel, Mumbai</b>
+  </div>
+  <div class="testi">
+    <div class="stars">⭐</div>
+    <p>"Made in India app is amazing. Works perfectly in Marathi."</p>
+    <b>- Amit Deshmukh, Pune</b>
+  </div>
+</div>
+
+<!-- Suggestion Box -->
+<div style="margin-top:60px; padding:40px 20px; background:var(--card); border-radius:20px; border:2px dashed var(--accent);">
+  <h2 style="color:var(--accent); font-size:2rem; margin-bottom:15px;">💡 Feature Request / सुविधा सुझाव</h2>
+  <p style="font-size:1.1rem; margin-bottom:25px; opacity:0.9;">
+    Tell us what you want / हमें बताओ क्या चाहिए<br>Your idea goes straight to CEO
+  </p>
+  
+  <form onsubmit="sendSuggestion(event)">
+    <textarea id="suggestionBox" placeholder="Ex: 'Add GST calculator' / 'Bhai Hindi me joke sunao'" 
+      style="width:100%; max-width:600px; height:120px; padding:15px; border-radius:15px; border:2px solid var(--accent); 
+      background:var(--bg1); color:var(--text); font-size:1rem; resize:none; outline:none;"></textarea>
+    
+    <br><br>
+    <input type="email" id="userEmail" placeholder="Email - We'll reply" 
+      style="width:100%; max-width:300px; padding:12px; border-radius:10px; border:2px solid var(--accent); 
+      background:var(--bg1); color:var(--text); font-size:0.95rem; outline:none; margin-bottom:15px;">
+    
+    <br>
+    <button type="submit" style="background:var(--accent); color:var(--bg1); padding:12px 35px; border:none; 
+      border-radius:30px; font-size:1.1rem; font-weight:bold; cursor:pointer;">
+      🚀 Submit / Bhejo
+    </button>
+  </form>
+  
+  <p id="thanksMsg" style="margin-top:15px; color:var(--accent); font-weight:bold; display:none;">
+    Thanks! Idea noted ✅ / Shukriya! Note kar liya ✅
+  </p>
+</div>
+
+<!-- Coming Soon Apps -->
+<div class="coming-soon">
+  <h2 style="color:var(--accent); margin-bottom:20px;">🚀 10 Apps Coming Soon</h2>
+  <div class="apps-grid">
+    <div class="app-card">SindhuAI Camera</div>
+    <div class="app-card">SindhuAI Music</div>
+    <div class="app-card">SindhuAI Notes</div>
+    <div class="app-card">SindhuAI Translator</div>
+    <div class="app-card">SindhuAI Calculator</div>
+    <div class="app-card">SindhuAI Weather</div>
+    <div class="app-card">SindhuAI Gallery</div>
+    <div class="app-card">SindhuAI Scanner</div>
+    <div class="app-card">SindhuAI Clock</div>
+    <div class="app-card">SindhuAI Games</div>
+  </div>
+</div>
+
+<!-- About CEO -->
+<div style="margin-top:60px; padding:40px 20px; background:var(--card); border-radius:20px;">
+  <h2 style="color:var(--accent); font-size:2rem; margin-bottom:20px;">About Me - Sudarshan Unde</h2>
+  <p style="font-size:1.1rem; line-height:1.8; max-width:700px; margin:auto;">
+    Hello! I am <b>Sudarshan Unde</b>, Founder & CEO of SindhuAI.in 🇮🇳<br><br>
+    My vision: <b>Every Indian should have their personal AI</b>. 
+    That understands your language, works fast, and guarantees full privacy.<br><br>
+    <b>SindhuAI.in = Made in India, Built for the World</b><br>
+    Email: support@sindhuai.in <i>Coming Soon</i>
+  </p>
+</div>
+
+<footer>© 2026 SindhuAI.in - All Rights Reserved | Made with ❤️ in India</footer>
+</div>
+
+<script>
+// Dark/Light Mode
+function toggleTheme() {
+  document.body.classList.toggle('light');
+  const btn = document.querySelector('.theme-btn');
+  btn.textContent = document.body.classList.contains('light') ? '☀️ Light' : '🌙 Dark';
+  localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+}
+document.querySelector('.theme-btn').onclick = toggleTheme;
+if(localStorage.getItem('theme') === 'light') {
+  document.body.classList.add('light');
+  document.querySelector('.theme-btn').textContent = '☀️ Light';
+}
+
+// Suggestion Form
+function sendSuggestion(e) {
+  e.preventDefault();
+  const suggestion = document.getElementById('suggestionBox').value;
+  const email = document.getElementById('userEmail').value;
+  
+  if(suggestion.trim() === '') {
+    alert('Please write something / Kuch likho bhai 😄');
+    return;
+  }
+  
+  document.getElementById('thanksMsg').style.display = 'block';
+  document.getElementById('suggestionBox').value = '';
+  document.getElementById('userEmail').value = '';
+  
+  console.log('Suggestion:', suggestion, 'Email:', email);
+  
+  setTimeout(() => {
+    document.getElementById('thanksMsg').style.display = 'none';
+  }, 3000);
+}
+</script>
+</body>
+</html>
